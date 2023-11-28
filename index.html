@@ -84,9 +84,27 @@
             padding: 15px;
             background-color: #fcd9ea;
         }
+
+        .button-container {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-bottom: 20px;
+        }
+
+        .button {
+            background-color: #fcd9ea; /* Use the same color as the background */
+            color: #c402cf;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
@@ -95,5 +113,11 @@
         <div class="bday">Happy birthday,<br> Angelika!</div>
     </div>
     <div class="heart"></div>
+
+    <!-- Button Container -->
+    <div class="button-container">
+        <button class="button">Click me</button>
+    </div>
 </body>
+
 </html>
