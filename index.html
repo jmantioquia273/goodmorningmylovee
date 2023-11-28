@@ -126,6 +126,29 @@
         .button:hover {
             background-color: #ff4455;
         }
+
+        /* Arrow Animation */
+        .arrow {
+            position: absolute;
+            bottom: 70px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: arrowAnimation 1.5s infinite;
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 30px solid #fff;
+        }
+
+        @keyframes arrowAnimation {
+            0%, 100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            50% {
+                transform: translateX(-50%) translateY(-10px);
+            }
+        }
     </style>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
@@ -137,6 +160,9 @@
         <div class="bday">Good morning, my loveee!<br> Wishing you a day filled with love and joy.<br> I Love Youuu my Lovee<br> mwaaaaaaaaaaaa&#128536;</div>
     </div>
     <div class="heart"></div>
+
+    <!-- Arrow Animation -->
+    <div class="arrow"></div>
 
     <!-- Button Container -->
     <div class="button-container">
