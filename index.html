@@ -83,6 +83,18 @@
             margin: 20px auto;
             padding: 15px;
             background-color: #fcd9ea;
+            animation-name: fadeIn;
+            animation-duration: 3s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
 
         .button-container {
@@ -101,22 +113,27 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #eaaad2; /* Change the color on hover */
         }
     </style>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Good Morning, My Love!</title>
 </head>
 
 <body>
     <div class="back">
-        <div class="bday">Happy birthday,<br> Angelika!</div>
+        <div class="bday">Good morning, my love!<br> Sending you all my love and warmth.</div>
     </div>
     <div class="heart"></div>
 
     <!-- Button Container -->
     <div class="button-container">
-        <a  href="flower.html" class="button">Click me</a>
+        <a href="flower.html" class="button">Open Your Surprise</a>
     </div>
 </body>
 
