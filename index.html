@@ -4,6 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
         .back {
             position: fixed;
             padding: 0;
@@ -12,9 +18,9 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: white;
+            background: linear-gradient(45deg, #ffbbe6, #ffd9eb);
             animation-name: backdiv;
-            animation-duration: 3500ms;
+            animation-duration: 6s;
             animation-iteration-count: infinite;
         }
 
@@ -25,7 +31,7 @@
             right: 0;
             bottom: 0;
             left: 0;
-            background-color: pink;
+            background-color: #ff6381;
             height: 150px;
             width: 150px;
             transform: rotate(-45deg);
@@ -34,31 +40,29 @@
             animation-iteration-count: infinite;
         }
 
-        .heart:after {
-            background-color: pink;
+        .heart:after,
+        .heart:before {
+            background-color: #ff6381;
             content: "";
             border-radius: 50%;
             position: absolute;
             width: 150px;
             height: 150px;
+        }
+
+        .heart:after {
             top: 0;
             left: 80px;
         }
 
         .heart:before {
-            background-color: pink;
-            content: "";
-            border-radius: 50%;
-            position: absolute;
-            width: 150px;
-            height: 150px;
             top: -80px;
             left: 0;
         }
 
         @keyframes backdiv {
             50% {
-                background: #ffbe82;
+                background: linear-gradient(45deg, #fcd9ea, #ffbbe6);
             }
         }
 
@@ -79,10 +83,11 @@
             font-size: 48px;
             font-family: 'Nunito', sans-serif;
             font-weight: 600;
-            color: #c402cf;
+            color: #ff6381;
             margin: 20px auto;
             padding: 15px;
-            background-color: #fcd9ea;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
             animation-name: fadeIn;
             animation-duration: 3s;
         }
@@ -106,18 +111,18 @@
         }
 
         .button {
-            background-color: #fcd9ea; /* Use the same color as the background */
-            color: #c402cf;
-            padding: 10px 20px;
-            font-size: 18px;
+            background-color: #ff6381;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 20px;
             border: none;
-            border-radius: 5px;
+            border-radius: 10px;
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
 
         .button:hover {
-            background-color: #eaaad2; /* Change the color on hover */
+            background-color: #ff4455;
         }
     </style>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -127,7 +132,7 @@
 
 <body>
     <div class="back">
-        <div class="bday">Good morning, my love!<br> Sending you all my love and warmth.</div>
+        <div class="bday">Good morning, my love!<br> Wishing you a day filled with love and joy.<br> I Love Youuu my Lovee<br> mwaaaaaaaaaaaa</div>
     </div>
     <div class="heart"></div>
 
